@@ -66,7 +66,20 @@ export const BundleBuilder: React.FC<BundleBuilderProps> = ({ onAddBundleToCart 
               <div className="text-xs font-bold uppercase tracking-wider text-[#C85A32] mb-2">
                 01 · Mobile Stand
               </div>
-              <div className="space-y-3">
+
+              {/* Selected Visual Preview */}
+              <div className="relative aspect-4/3 rounded-lg overflow-hidden border border-[#E5E1D8] mb-3 bg-white">
+                <img
+                  src={selectedStand.image}
+                  alt={selectedStand.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 left-2 px-2 py-0.5 bg-black/70 backdrop-blur-xs rounded text-[10px] font-mono text-white">
+                  {selectedStand.name}
+                </div>
+              </div>
+
+              <div className="space-y-2">
                 {stands.map((item) => (
                   <button
                     key={item.id}
@@ -74,17 +87,24 @@ export const BundleBuilder: React.FC<BundleBuilderProps> = ({ onAddBundleToCart 
                       setSelectedStand(item);
                       setStandColor(item.colors[0]?.name || 'Standard');
                     }}
-                    className={`w-full text-left p-3 rounded-lg border transition-all cursor-pointer ${
+                    className={`w-full text-left p-2.5 rounded-lg border transition-all cursor-pointer flex items-center gap-2.5 ${
                       selectedStand.id === item.id
                         ? 'bg-white border-[#C85A32] shadow-xs'
                         : 'bg-white/60 border-transparent hover:bg-white text-[#16191D]/70'
                     }`}
                   >
-                    <div className="flex items-center justify-between text-xs font-bold text-[#16191D]">
-                      <span>{item.name}</span>
-                      <span className="tabular-nums">${item.price}</span>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-10 h-10 rounded object-cover shrink-0 border border-black/10"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between text-xs font-bold text-[#16191D]">
+                        <span className="truncate">{item.name}</span>
+                        <span className="tabular-nums ml-1">${item.price}</span>
+                      </div>
+                      <div className="text-[11px] text-[#676E79] line-clamp-1">{item.tagline}</div>
                     </div>
-                    <div className="text-[11px] text-[#676E79] mt-1 line-clamp-1">{item.tagline}</div>
                   </button>
                 ))}
               </div>
@@ -118,7 +138,20 @@ export const BundleBuilder: React.FC<BundleBuilderProps> = ({ onAddBundleToCart 
               <div className="text-xs font-bold uppercase tracking-wider text-[#C85A32] mb-2">
                 02 · Key Holder
               </div>
-              <div className="space-y-3">
+
+              {/* Selected Visual Preview */}
+              <div className="relative aspect-4/3 rounded-lg overflow-hidden border border-[#E5E1D8] mb-3 bg-white">
+                <img
+                  src={selectedKey.image}
+                  alt={selectedKey.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 left-2 px-2 py-0.5 bg-black/70 backdrop-blur-xs rounded text-[10px] font-mono text-white">
+                  {selectedKey.name}
+                </div>
+              </div>
+
+              <div className="space-y-2">
                 {keys.map((item) => (
                   <button
                     key={item.id}
@@ -126,17 +159,24 @@ export const BundleBuilder: React.FC<BundleBuilderProps> = ({ onAddBundleToCart 
                       setSelectedKey(item);
                       setKeyColor(item.colors[0]?.name || 'Standard');
                     }}
-                    className={`w-full text-left p-3 rounded-lg border transition-all cursor-pointer ${
+                    className={`w-full text-left p-2.5 rounded-lg border transition-all cursor-pointer flex items-center gap-2.5 ${
                       selectedKey.id === item.id
                         ? 'bg-white border-[#C85A32] shadow-xs'
                         : 'bg-white/60 border-transparent hover:bg-white text-[#16191D]/70'
                     }`}
                   >
-                    <div className="flex items-center justify-between text-xs font-bold text-[#16191D]">
-                      <span>{item.name}</span>
-                      <span className="tabular-nums">${item.price}</span>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-10 h-10 rounded object-cover shrink-0 border border-black/10"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between text-xs font-bold text-[#16191D]">
+                        <span className="truncate">{item.name}</span>
+                        <span className="tabular-nums ml-1">${item.price}</span>
+                      </div>
+                      <div className="text-[11px] text-[#676E79] line-clamp-1">{item.tagline}</div>
                     </div>
-                    <div className="text-[11px] text-[#676E79] mt-1 line-clamp-1">{item.tagline}</div>
                   </button>
                 ))}
               </div>
@@ -170,7 +210,20 @@ export const BundleBuilder: React.FC<BundleBuilderProps> = ({ onAddBundleToCart 
               <div className="text-xs font-bold uppercase tracking-wider text-[#C85A32] mb-2">
                 03 · Everyday Bag
               </div>
-              <div className="space-y-3">
+
+              {/* Selected Visual Preview */}
+              <div className="relative aspect-4/3 rounded-lg overflow-hidden border border-[#E5E1D8] mb-3 bg-white">
+                <img
+                  src={selectedBag.image}
+                  alt={selectedBag.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 left-2 px-2 py-0.5 bg-black/70 backdrop-blur-xs rounded text-[10px] font-mono text-white">
+                  {selectedBag.name}
+                </div>
+              </div>
+
+              <div className="space-y-2">
                 {bags.map((item) => (
                   <button
                     key={item.id}
@@ -178,17 +231,24 @@ export const BundleBuilder: React.FC<BundleBuilderProps> = ({ onAddBundleToCart 
                       setSelectedBag(item);
                       setBagColor(item.colors[0]?.name || 'Standard');
                     }}
-                    className={`w-full text-left p-3 rounded-lg border transition-all cursor-pointer ${
+                    className={`w-full text-left p-2.5 rounded-lg border transition-all cursor-pointer flex items-center gap-2.5 ${
                       selectedBag.id === item.id
                         ? 'bg-white border-[#C85A32] shadow-xs'
                         : 'bg-white/60 border-transparent hover:bg-white text-[#16191D]/70'
                     }`}
                   >
-                    <div className="flex items-center justify-between text-xs font-bold text-[#16191D]">
-                      <span>{item.name}</span>
-                      <span className="tabular-nums">${item.price}</span>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-10 h-10 rounded object-cover shrink-0 border border-black/10"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between text-xs font-bold text-[#16191D]">
+                        <span className="truncate">{item.name}</span>
+                        <span className="tabular-nums ml-1">${item.price}</span>
+                      </div>
+                      <div className="text-[11px] text-[#676E79] line-clamp-1">{item.tagline}</div>
                     </div>
-                    <div className="text-[11px] text-[#676E79] mt-1 line-clamp-1">{item.tagline}</div>
                   </button>
                 ))}
               </div>
@@ -222,7 +282,20 @@ export const BundleBuilder: React.FC<BundleBuilderProps> = ({ onAddBundleToCart 
               <div className="text-xs font-bold uppercase tracking-wider text-[#C85A32] mb-2">
                 04 · Desk Organizer
               </div>
-              <div className="space-y-3">
+
+              {/* Selected Visual Preview */}
+              <div className="relative aspect-4/3 rounded-lg overflow-hidden border border-[#E5E1D8] mb-3 bg-white">
+                <img
+                  src={selectedOrganizer.image}
+                  alt={selectedOrganizer.name}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-2 left-2 px-2 py-0.5 bg-black/70 backdrop-blur-xs rounded text-[10px] font-mono text-white">
+                  {selectedOrganizer.name}
+                </div>
+              </div>
+
+              <div className="space-y-2">
                 {organizers.map((item) => (
                   <button
                     key={item.id}
@@ -230,17 +303,24 @@ export const BundleBuilder: React.FC<BundleBuilderProps> = ({ onAddBundleToCart 
                       setSelectedOrganizer(item);
                       setOrganizerColor(item.colors[0]?.name || 'Standard');
                     }}
-                    className={`w-full text-left p-3 rounded-lg border transition-all cursor-pointer ${
+                    className={`w-full text-left p-2.5 rounded-lg border transition-all cursor-pointer flex items-center gap-2.5 ${
                       selectedOrganizer.id === item.id
                         ? 'bg-white border-[#C85A32] shadow-xs'
                         : 'bg-white/60 border-transparent hover:bg-white text-[#16191D]/70'
                     }`}
                   >
-                    <div className="flex items-center justify-between text-xs font-bold text-[#16191D]">
-                      <span>{item.name}</span>
-                      <span className="tabular-nums">${item.price}</span>
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-10 h-10 rounded object-cover shrink-0 border border-black/10"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center justify-between text-xs font-bold text-[#16191D]">
+                        <span className="truncate">{item.name}</span>
+                        <span className="tabular-nums ml-1">${item.price}</span>
+                      </div>
+                      <div className="text-[11px] text-[#676E79] line-clamp-1">{item.tagline}</div>
                     </div>
-                    <div className="text-[11px] text-[#676E79] mt-1 line-clamp-1">{item.tagline}</div>
                   </button>
                 ))}
               </div>
@@ -283,6 +363,28 @@ export const BundleBuilder: React.FC<BundleBuilderProps> = ({ onAddBundleToCart 
             <p className="text-xs text-white/75 max-w-xl">
               Includes {selectedStand.name} ({standColor}), {selectedKey.name} ({keyColor}), {selectedBag.name} ({bagColor}), and {selectedOrganizer.name} ({organizerColor}).
             </p>
+
+            {/* Live 4-item visual suite preview */}
+            <div className="flex flex-wrap items-center gap-2.5 pt-2">
+              {[
+                { product: selectedStand, color: standColor, step: '01' },
+                { product: selectedKey, color: keyColor, step: '02' },
+                { product: selectedBag, color: bagColor, step: '03' },
+                { product: selectedOrganizer, color: organizerColor, step: '04' }
+              ].map(({ product, color, step }) => (
+                <div key={step} className="flex items-center gap-2 bg-white/10 rounded-lg p-1.5 pr-2.5 border border-white/10">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-8 h-8 rounded object-cover shrink-0"
+                  />
+                  <div className="text-[11px] leading-tight text-left">
+                    <div className="text-white font-bold truncate max-w-[110px]">{product.name}</div>
+                    <div className="text-[#F07A4B] text-[10px]">{color}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-6 shrink-0 w-full lg:w-auto">

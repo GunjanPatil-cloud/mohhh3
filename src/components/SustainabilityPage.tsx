@@ -150,7 +150,7 @@ export const SustainabilityPage: React.FC<SustainabilityPageProps> = ({
           <div className="lg:col-span-5">
             <div className="aspect-4/3 rounded-2xl overflow-hidden shadow-lg border border-[#E5E1D8] bg-[#F1EFEA] relative group">
               <img
-                src="/src/assets/images/sustainability_materials_craft_1793462549449.jpg"
+                src="/images/sustainability_materials_craft_1793462549449.jpg"
                 alt="DailyMate sustainable materials: recycled aerospace aluminum, natural American walnut, recycled Cordura, and molded pulp packaging"
                 className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500 ease-out"
                 referrerPolicy="no-referrer"

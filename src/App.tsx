@@ -255,7 +255,10 @@ export default function App() {
 
             <ProductionProcess />
 
-            <SustainabilitySection />
+            <SustainabilitySection
+              onGoToSustainability={() => handleNavigatePage('sustainability')}
+              onOpenAudit={() => handleOpenProject('sustainability-audit')}
+            />
 
             <StartupStudies
               onGoToProjectsPage={() => handleNavigatePage('projects')}

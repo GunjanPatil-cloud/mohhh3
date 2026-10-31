@@ -122,6 +122,9 @@ export const CartDrawer: React.FC<CartDrawerProps> = ({
                 <img
                   src={item.product.image}
                   alt={item.product.name}
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = '/images/hero_daily_workspace_1793461811757.jpg';
+                  }}
                   className="w-18 h-18 object-cover rounded-lg bg-white shrink-0"
                   referrerPolicy="no-referrer"
                 />

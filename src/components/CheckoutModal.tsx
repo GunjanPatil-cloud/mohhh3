@@ -121,14 +121,21 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
               </div>
 
               {/* Items Purchased */}
-              <div className="pt-1 space-y-1">
+              <div className="pt-1 space-y-2">
                 <span className="text-[#676E79] font-semibold">Items in shipment:</span>
                 {confirmedOrder.items.map((it, idx) => (
-                  <div key={idx} className="flex justify-between text-[#16191D]">
-                    <span>
-                      {it.quantity}× {it.product.name} ({it.selectedColor})
-                    </span>
-                    <span className="font-mono">${it.product.price * it.quantity}</span>
+                  <div key={idx} className="flex items-center justify-between text-[#16191D] gap-2">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <img
+                        src={it.product.image}
+                        alt={it.product.name}
+                        className="w-8 h-8 rounded object-cover border border-black/10 shrink-0"
+                      />
+                      <span className="truncate">
+                        {it.quantity}× {it.product.name} ({it.selectedColor})
+                      </span>
+                    </div>
+                    <span className="font-mono shrink-0">${it.product.price * it.quantity}</span>
                   </div>
                 ))}
               </div>
@@ -301,6 +308,24 @@ export const CheckoutModal: React.FC<CheckoutModalProps> = ({
                       <div className="text-[10px] opacity-75">Pay on arrival</div>
                     </div>
                   </button>
+                </div>
+              </div>
+
+              {/* Items in Order Preview */}
+              <div className="space-y-2 pt-1 border-t border-[#E5E1D8]">
+                <div className="flex items-center justify-between text-xs font-bold text-[#16191D]">
+                  <span>Items in Your Order ({items.reduce((acc, it) => acc + it.quantity, 0)})</span>
+                </div>
+                <div className="flex items-center gap-2 overflow-x-auto py-1 scrollbar-none">
+                  {items.map((it, idx) => (
+                    <div key={idx} className="flex items-center gap-2 bg-[#F8F7F4] p-1.5 pr-3 rounded-lg border border-[#E5E1D8] shrink-0">
+                      <img src={it.product.image} alt={it.product.name} className="w-8 h-8 rounded object-cover border border-black/10 shrink-0" />
+                      <div className="text-[11px] leading-tight text-left">
+                        <div className="font-bold text-[#16191D] truncate max-w-[120px]">{it.product.name}</div>
+                        <div className="text-[#676E79]">{it.quantity}× · {it.selectedColor}</div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
 

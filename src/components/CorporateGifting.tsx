@@ -143,6 +143,17 @@ export const CorporateGifting: React.FC = () => {
 
           {/* Volume Pricing & Quick Quote Form */}
           <div className="lg:col-span-5 bg-[#F8F7F4] rounded-2xl border border-[#E5E1D8] p-6 sm:p-8 space-y-6">
+            <div className="relative aspect-16/9 rounded-xl overflow-hidden border border-[#E5E1D8] bg-[#16191D]">
+              <img
+                src="/images/corporate_gifting_suite.jpg"
+                alt="DailyMate Executive Corporate Presentation Gift Box"
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <div className="absolute bottom-2 left-2 px-2 py-0.5 bg-black/80 backdrop-blur-xs rounded text-[10px] font-mono text-white flex items-center gap-1.5">
+                <span className="text-[#F07A4B] font-bold">INCLUDED:</span> Custom Presentation Box &amp; Laser Seal
+              </div>
+            </div>
+
             <div>
               <div className="flex items-center gap-2 text-xs font-bold text-[#C85A32] uppercase tracking-wider mb-1">
                 <Building2 className="w-4 h-4" />

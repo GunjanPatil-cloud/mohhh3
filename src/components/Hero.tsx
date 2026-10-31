@@ -73,7 +73,7 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onOpenBuilder, onGoToSust
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden bg-[#16191D]/5 border border-[#E5E1D8] shadow-lg group">
               <img
-                src="/src/assets/images/hero_daily_workspace_1793461811757.jpg"
+                src="/images/hero_daily_workspace_1793461811757.jpg"
                 alt="DailyMate workspace setup with mobile stand, key organizer, sling bag, and desk tray"
                 className="w-full h-auto object-cover aspect-16/10 group-hover:scale-[1.02] transition-transform duration-700 ease-out"
                 referrerPolicy="no-referrer"
@@ -95,36 +95,56 @@ export const Hero: React.FC<HeroProps> = ({ onExplore, onOpenBuilder, onGoToSust
 
         {/* 4-Column Architectural Highlights Strip */}
         <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div className="p-5 rounded-xl bg-white border border-[#E5E1D8] shadow-2xs hover:border-[#C85A32]/40 transition-colors">
-            <div className="text-xs font-semibold uppercase tracking-wider text-[#C85A32] mb-1">01. Mobile Stands</div>
-            <h3 className="text-base font-bold text-[#16191D]">Zero-Wobble Counterbalance</h3>
-            <p className="text-xs text-[#676E79] mt-1 leading-relaxed">
-              380g weighted brass dampening base with dual-axis 360° fluid detents.
-            </p>
+          <div className="p-4 rounded-xl bg-white border border-[#E5E1D8] shadow-2xs hover:border-[#C85A32]/40 transition-colors flex items-center gap-3.5">
+            <img
+              src="/images/product_stand_aluminum_1793461812264.jpg"
+              alt="Mobile Stands"
+              className="w-14 h-14 rounded-lg object-cover shrink-0 border border-black/10"
+            />
+            <div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider text-[#C85A32]">01 · Mobile Stands</div>
+              <h3 className="text-xs font-bold text-[#16191D]">Zero-Wobble Aluminum</h3>
+              <p className="text-[11px] text-[#676E79] line-clamp-1">380g weighted brass base</p>
+            </div>
           </div>
 
-          <div className="p-5 rounded-xl bg-white border border-[#E5E1D8] shadow-2xs hover:border-[#C85A32]/40 transition-colors">
-            <div className="text-xs font-semibold uppercase tracking-wider text-[#C85A32] mb-1">02. Key Holders</div>
-            <h3 className="text-base font-bold text-[#16191D]">Silent Titanium Enclosure</h3>
-            <p className="text-xs text-[#676E79] mt-1 leading-relaxed">
-              Grade 5 titanium chassis and full-grain leather silencing key jangle forever.
-            </p>
+          <div className="p-4 rounded-xl bg-white border border-[#E5E1D8] shadow-2xs hover:border-[#C85A32]/40 transition-colors flex items-center gap-3.5">
+            <img
+              src="/images/product_key_holder_1793461811735.jpg"
+              alt="Key Holders"
+              className="w-14 h-14 rounded-lg object-cover shrink-0 border border-black/10"
+            />
+            <div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider text-[#C85A32]">02 · Key Holders</div>
+              <h3 className="text-xs font-bold text-[#16191D]">Silent Titanium Clip</h3>
+              <p className="text-[11px] text-[#676E79] line-clamp-1">Grade-5 titanium &amp; leather</p>
+            </div>
           </div>
 
-          <div className="p-5 rounded-xl bg-white border border-[#E5E1D8] shadow-2xs hover:border-[#C85A32]/40 transition-colors">
-            <div className="text-xs font-semibold uppercase tracking-wider text-[#C85A32] mb-1">03. Everyday Bags</div>
-            <h3 className="text-base font-bold text-[#16191D]">Weatherproof 500D Cordura</h3>
-            <p className="text-xs text-[#676E79] mt-1 leading-relaxed">
-              Waterproof YKK AquaGuard zippers and German Fidlock magnetic buckle systems.
-            </p>
+          <div className="p-4 rounded-xl bg-white border border-[#E5E1D8] shadow-2xs hover:border-[#C85A32]/40 transition-colors flex items-center gap-3.5">
+            <img
+              src="/images/product_daily_sling_1793461826128.jpg"
+              alt="Everyday Carry Bags"
+              className="w-14 h-14 rounded-lg object-cover shrink-0 border border-black/10"
+            />
+            <div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider text-[#C85A32]">03 · Everyday Bags</div>
+              <h3 className="text-xs font-bold text-[#16191D]">Weatherproof Cordura</h3>
+              <p className="text-[11px] text-[#676E79] line-clamp-1">Fidlock magnetic locks</p>
+            </div>
           </div>
 
-          <div className="p-5 rounded-xl bg-white border border-[#E5E1D8] shadow-2xs hover:border-[#C85A32]/40 transition-colors">
-            <div className="text-xs font-semibold uppercase tracking-wider text-[#C85A32] mb-1">04. Desk Organizers</div>
-            <h3 className="text-base font-bold text-[#16191D]">Sculpted Walnut &amp; Aluminum</h3>
-            <p className="text-xs text-[#676E79] mt-1 leading-relaxed">
-              CNC-milled solid American walnut with sandblasted valet modules and Qi2 charging.
-            </p>
+          <div className="p-4 rounded-xl bg-white border border-[#E5E1D8] shadow-2xs hover:border-[#C85A32]/40 transition-colors flex items-center gap-3.5">
+            <img
+              src="/images/product_desk_organizer_1793461825517.jpg"
+              alt="Desk Organizers"
+              className="w-14 h-14 rounded-lg object-cover shrink-0 border border-black/10"
+            />
+            <div>
+              <div className="text-[11px] font-semibold uppercase tracking-wider text-[#C85A32]">04 · Desk Organizers</div>
+              <h3 className="text-xs font-bold text-[#16191D]">Sculpted Walnut &amp; Qi2</h3>
+              <p className="text-[11px] text-[#676E79] line-clamp-1">Solid CNC walnut modules</p>
+            </div>
           </div>
         </div>
       </div>

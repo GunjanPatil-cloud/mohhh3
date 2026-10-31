@@ -32,7 +32,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 142,
     tagline: 'Dual-axis 360° rotating aluminum smartphone & tablet stand',
     description: 'Forged from aircraft-grade 6061-T6 aluminum, the OmniStand Pro delivers rock-solid, zero-wobble elevation. Features a weighted brass damping base, micro-textured silicone cushioning, and precision cable pass-through for seamless desk charging.',
-    image: '/src/assets/images/product_stand_aluminum_1793461812264.jpg',
+    image: '/images/product_stand_aluminum_1793461812264.jpg',
     highlights: [
       'Dual-Axis 360° Rotation with tactile detent',
       '380g Weighted Counterbalance Base (Zero wobble)',
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 89,
     tagline: 'Ultra-slim 4.2mm magnetic folding travel stand',
     description: 'The thinnest collapsible stand in our lineup. Folds flatter than a credit card stack and snaps onto magnetic phone cases instantly with N52 neodymium magnets. Perfect for coffee shop work and flights.',
-    image: '/src/assets/images/product_stand_aluminum_1793461812264.jpg',
+    image: '/images/product_pocketfold_magstand.jpg',
     highlights: [
       'Ultra-thin 4.2mm folded thickness',
       'N52 Neodymium Magnetic Snap System',
@@ -90,7 +90,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 218,
     tagline: 'Silent magnetic titanium & vegetable-tanned leather key manager',
     description: 'Eliminates noisy key jangle forever. Houses 2 to 7 keys in a streamlined, silent envelope. Built with surgical grade-5 titanium side plates, full-grain Italian vegetable-tanned saddle leather, and an integrated D-ring for car fobs.',
-    image: '/src/assets/images/product_key_holder_1793461811735.jpg',
+    image: '/images/product_key_holder_1793461811735.jpg',
     highlights: [
       'Completely silences key chime and pocket abrasion',
       'Grade 5 Titanium & Vegetable-Tanned Italian Leather',
@@ -120,7 +120,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 76,
     tagline: 'Minimalist solid walnut floating wall dock with hidden magnetic grip',
     description: 'The entryway solution for disciplined homes. Carved from a single piece of FSC-certified American walnut with high-energy neodymium magnets concealed beneath the bottom edge. Includes a top mail channel and eyewear slot.',
-    image: '/src/assets/images/product_key_holder_1793461811735.jpg',
+    image: '/images/product_dockwall_keyrail.jpg',
     highlights: [
       'Concealed neodymium magnet array holds up to 800g per key cluster',
       'FSC-Certified American Walnut with natural wax coat',
@@ -148,7 +148,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 312,
     tagline: 'Weatherproof Cordura tech crossbody with magnetic Fidlock buckle',
     description: 'Engineered for the daily commute and weekend exploration. Made from ultra-durable 500D recycled Cordura nylon with YKK AquaGuard weatherproof zippers. Features dedicated padded pockets for an 11-inch tablet, phone, keys, and cards.',
-    image: '/src/assets/images/product_daily_sling_1793461826128.jpg',
+    image: '/images/product_daily_sling_1793461826128.jpg',
     highlights: [
       'German-engineered Fidlock magnetic V-buckle for rapid detachment',
       'Waterproof 500D Recycled Cordura & YKK AquaGuard zippers',
@@ -178,7 +178,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 164,
     tagline: 'Ergonomic all-weather daily commuter backpack with suspended laptop cell',
     description: 'Balanced between office minimalism and rugged durability. Features an independent suspended sleeve for up to 16" laptops, breathable channeled EVA back panel, luggage trolley pass-through, and modular magnetic anchor loops.',
-    image: '/src/assets/images/product_daily_sling_1793461826128.jpg',
+    image: '/images/product_daypack_backpack.jpg',
     highlights: [
       'Suspended 16-inch laptop cradle with 360° impact bumper',
       'Clamshell 180° opening for rapid packing and airport screening',
@@ -206,7 +206,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 184,
     tagline: 'Modular solid walnut & sandblasted aluminum valet desk station',
     description: 'Transform cluttered desks into calm, intentional workspaces. The Horizon Trio features a solid American walnut perimeter tray paired with two removable sandblasted anodized aluminum valet modules with fluted pen rests and cable notches.',
-    image: '/src/assets/images/product_desk_organizer_1793461825517.jpg',
+    image: '/images/product_desk_organizer_1793461825517.jpg',
     highlights: [
       'Modular 3-piece layout: arrange together or distribute across the desk',
       'Solid CNC-routed American Walnut finished with organic Danish oil',
@@ -235,7 +235,7 @@ export const PRODUCTS: Product[] = [
     reviewsCount: 92,
     tagline: 'Sculpted desktop organizer with built-in 15W Qi2 fast charging coaster',
     description: 'Combining functional stationery organization with wireless power. The HexStation features precision-milled hexagonal cylinders for writing tools, flash drives, scissors, and cables, seated upon a rapid 15W wireless charging pad.',
-    image: '/src/assets/images/product_desk_organizer_1793461825517.jpg',
+    image: '/images/product_hexstation_tower.jpg',
     highlights: [
       'Integrated 15W Qi2 Fast Wireless Charging station for phones and earbuds',
       'Solid weighted zinc alloy base prevents accidental sliding (640g)',

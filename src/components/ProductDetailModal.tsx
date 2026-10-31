@@ -65,6 +65,9 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               <img
                 src={product.image}
                 alt={product.name}
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = '/images/hero_daily_workspace_1793461811757.jpg';
+                }}
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />

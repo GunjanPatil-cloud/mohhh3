@@ -147,7 +147,7 @@ export const ProjectsPage: React.FC<ProjectsPageProps> = ({
           <div className="lg:col-span-5">
             <div className="aspect-16/10 rounded-2xl overflow-hidden shadow-lg border border-[#E5E1D8] bg-[#F1EFEA] relative group">
               <img
-                src="/src/assets/images/projects_engineering_blueprint_1793463395323.jpg"
+                src="/images/projects_engineering_blueprint_1793463395323.jpg"
                 alt="DailyMate engineering CAD drawings and prototyping bench"
                 className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500 ease-out"
                 referrerPolicy="no-referrer"
