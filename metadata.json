@@ -1,0 +1,6 @@
+{
+  "name": "DailyMate - Daily-Use Accessories & Desk Organization",
+  "description": "Precision-engineered daily-use accessories: mobile stands, key holders, everyday carry bags, and modular desk organizers built for modern workflow and longevity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

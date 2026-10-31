@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --canvas: #F8F7F4;
+  --surface: #FFFFFF;
+  --surface-subtle: #F1EFEA;
+  --border: #E5E1D8;
+  --border-strong: #D5CFC3;
+  --text-main: #16191D;
+  --text-muted: #676E79;
+  --brand-primary: #16191D;
+  --brand-accent: #C85A32;
+  --brand-accent-hover: #B24E27;
+  --brand-accent-light: #FBF1EB;
+  --brand-highlight: #F07A4B;
+}
+
+[data-theme="slate-amber"] {
+  --canvas: #F4F6F8;
+  --surface: #FFFFFF;
+  --surface-subtle: #EAEEF2;
+  --border: #DCE2E8;
+  --border-strong: #CAD2DC;
+  --text-main: #0F172A;
+  --text-muted: #596577;
+  --brand-primary: #0F172A;
+  --brand-accent: #D97706;
+  --brand-accent-hover: #B45309;
+  --brand-accent-light: #FEF3C7;
+  --brand-highlight: #F59E0B;
+}
+
+[data-theme="nordic-sage"] {
+  --canvas: #F5F7F5;
+  --surface: #FFFFFF;
+  --surface-subtle: #EBF0EC;
+  --border: #DEE4DF;
+  --border-strong: #CCD6CE;
+  --text-main: #14201A;
+  --text-muted: #56695F;
+  --brand-primary: #14201A;
+  --brand-accent: #1E7F55;
+  --brand-accent-hover: #166442;
+  --brand-accent-light: #E8F5EF;
+  --brand-highlight: #B5F45A;
+}
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--canvas);
+    color: var(--text-main);
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
